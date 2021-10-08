@@ -1,3 +1,16 @@
+# Overview
+
+This project displays how to create a basic state machine using a reducer.
+
+The state machine works by having state and transitioning to another state using events.
+This is done using the reducer function. The reducer function takes the current state and
+the event, then returns the next state.
+
+Side effects are handled by UseEffect. When then current state changes, UseEffect takes
+notice and causes a side effect.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
