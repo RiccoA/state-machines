@@ -85,11 +85,12 @@ function fetchRandomPokemon() {
   return new Promise((res, rej) => {
     setTimeout(() => {
       const fail = Math.random() < 0.1;
+      const randomID = Math.floor(Math.random() * (930 - 1 + 1)) + 1;
 
       if (fail) {
         rej("Failed");
       } else {
-        fetch(`https://pokeapi.co/api/v2/pokemon/25`)
+        fetch(`https://pokeapi.co/api/v2/pokemon/${randomID}`)
           .then(data => data.json())
           .then(data => {
             res(data);
